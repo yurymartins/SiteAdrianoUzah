@@ -2,10 +2,90 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
+:root {
+  --bg-color: #1e1e1e;
+  --white: #ffffff;
+  --lime-green: #84f41f;
+  --dark-green: #033a00;
+  --green-gradient: linear-gradient(159.35deg, #bcff35 13.69%, #84f41f 87.35%);
+}
+
 body {
-  background-color: black;
+  font-family: Poppins, Arial, sans-serif;
+  margin: 0;
+  background-color: var(--bg-color);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  font-size: 1.625rem;
+  font-weight: 500;
+  margin-top: 1.875rem;
+}
+
+.header-menu a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.header-menu a:hover {
+  border-bottom: 0.1875rem solid var(--lime-green);
+  transition: linear;
 }
 
 .logo {
-  width: 4%;
+  width: 10%;
+  margin: 0.9375rem 0 0 8.5rem;
+}
+
+.botao {
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  color: var(--dark-green);
+  text-transform: uppercase;
+  width: 6.0625rem;
+  height: 1.375rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  background: var(--lime-green);
+  padding: 0.75rem 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1.125rem 8.75rem 0 0;
+  border: 0.1875rem solid transparent;
+}
+
+.botao:hover {
+  color: var(--white);
+  background: transparent;
+  border: 0.1875rem solid var(--lime-green);
+  transition: 0.3s ease-in-out;
 }
