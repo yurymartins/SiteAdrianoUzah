@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap");
 
 :root {
   --bg-color: #1e1e1e;
@@ -14,6 +15,10 @@ body {
   font-family: Poppins, Arial, sans-serif;
   margin: 0;
   background-color: var(--bg-color);
+  background-image: url(/bg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw;
 }
 
 h1,
@@ -36,8 +41,9 @@ img {
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  max-width: 112.5rem;
 }
 
 .header-menu {
@@ -65,27 +71,84 @@ img {
 }
 
 .botao {
+  display: flex;
   font-family: Lato, Arial, sans-serif;
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.25rem;
-  color: var(--dark-green);
   text-transform: uppercase;
   width: 6.0625rem;
   height: 1.375rem;
   border-radius: 0.25rem;
+  list-style: none;
   text-decoration: none;
-  background: var(--lime-green);
+  background: var(--green-gradient);
   padding: 0.75rem 1.5rem;
   align-items: center;
   flex-wrap: wrap;
-  margin: 1.125rem 8.75rem 0 0;
+  margin: 0.9375rem 8.5rem 0 0;
   border: 0.1875rem solid transparent;
+  align-items: center;
+  color: var(--dark-green);
 }
 
 .botao:hover {
   color: var(--white);
   background: transparent;
   border: 0.1875rem solid var(--lime-green);
-  transition: 0.3s ease-in-out;
+  transition: 0.3s;
+}
+
+.main-title {
+  display: flex;
+  font-size: 5rem;
+  color: var(--white);
+  margin: 10rem 0 0 8.75rem;
+  flex-wrap: wrap;
+  max-width: 112.5rem;
+}
+
+.main-title span {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: var(--white);
+  color: transparent;
+}
+
+.main-subtitle {
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  color: var(--white);
+  margin: -2rem 0 0 8.75rem;
+  white-space: nowrap;
+  height: 4rem;
+}
+
+.deco {
+  height: 0.25rem;
+  border: none;
+  background-color: #93ff2a;
+  border-radius: 0.25rem;
+  width: 9.0625rem;
+  margin: 3.375rem 0 0 6.25rem;
+}
+
+.social-network-icons {
+  display: flex;
+  width: 3.125rem;
+  gap: 1.875rem;
+  filter: invert(99%) sepia(6%) saturate(0%) hue-rotate(157deg) brightness(114%)
+    contrast(100%);
+  margin: 3.375rem 0 0 8.75rem;
+}
+
+.social-network-icons a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-network-icons > svg:hover {
+  width: 55px;
 }
