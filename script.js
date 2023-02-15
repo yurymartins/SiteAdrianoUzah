@@ -1,3 +1,4 @@
+//Efeito digitar página principal
 const words = ["Cantor", "Ator", "Dançarino", "Preparador Vocal"];
 
 function typeWriter(text, i, callback) {
